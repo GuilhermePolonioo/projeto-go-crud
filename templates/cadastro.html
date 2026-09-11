@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>GoUser | Cadastro</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><nav><a class="brand" href="/">Go<span>User</span></a><div class="nav"><a href="/">Inicio</a><a href="/usuarios">Usuarios</a></div></nav>
+<main class="page"><a class="back" href="/">← Voltar</a><section class="form"><div class="tag">NOVO CADASTRO</div><h1>Cadastrar usuario</h1><p>Informe os dados para inserir um novo usuario.</p>{{if .}}<div class="error">{{.Erro}}</div>{{end}}
+<form method="POST" action="/cadastro"><label>Nome completo<input type="text" name="nome" placeholder="Ex.: Guilherme Polonio" required></label><label>E-mail<input type="email" name="email" placeholder="exemplo@email.com" required></label><label>Senha<input type="password" name="senha" placeholder="Digite a senha" required></label><button class="btn primary full" type="submit">Cadastrar usuario</button></form></section></main></body></html>

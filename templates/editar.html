@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>GoUser | Editar</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><nav><a class="brand" href="/">Go<span>User</span></a><div class="nav"><a href="/">Inicio</a><a href="/usuarios">Usuarios</a></div></nav>
+<main class="page"><a class="back" href="/usuarios">← Voltar para usuarios</a><section class="form"><div class="tag">ALTERACAO</div><h1>Editar usuario #{{.ID}}</h1><p>Atualize os dados. Deixe a senha vazia para mante-la.</p>
+<form method="POST" action="/editar?id={{.ID}}"><label>Nome completo<input type="text" name="nome" value="{{.Nome}}" required></label><label>E-mail<input type="email" name="email" value="{{.Email}}" required></label><label>Nova senha<input type="password" name="senha" placeholder="Opcional"></label><button class="btn primary full" type="submit">Salvar alteracoes</button></form></section></main></body></html>
